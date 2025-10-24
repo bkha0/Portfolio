@@ -1,4 +1,4 @@
-// === Start of Navigation Menu Toggle ===
+// === Navigation Menu Toggle ===
 const menu = document.querySelector('.menu');
 const menuBtn = document.getElementById('menuBtn');
 const menuIcon = menuBtn.querySelector('i');
@@ -12,7 +12,7 @@ menuBtn.addEventListener('click', () => {
   }
 });
 
-// === Close Menu When Link Is Clicked ===
+// === Close Menu on Link Click ===
 const menuLinks = document.querySelectorAll('.menu a');
 
 menuLinks.forEach(link => {
