@@ -1,92 +1,131 @@
+<!-- === Start of HTML Document === -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bashir</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Boxicons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bashir</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Boxicons & Font Awesome -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Navigation start -->
-    <header>
-        <div class="logo">
-            <a href="#home" class="logo-text">Bashir</a>
-        </div>
 
-        <ul class="menu">
-            <li class="lia"><a href="#home">Home</a></li>
-            <li class="lia"><a href="#skills">Skills</a></li>
-            <li class="lia"><a href="">Services</a></li>
-            <li class="lia"><a href="">Contact</a></li>
-            <li class="libtn">
-                <button><i class="bx bxs-moon"></i></button>
-            </li>
-        </ul>
+  <!-- === Navigation Section === -->
+  <header>
+    <div class="logo">
+      <a href="index.html" class="logo-text">Bashir</a>
+    </div>
 
-        <div class="hum">
-            <button class="humBtn" id="menuBtn">
-                <i class='bx bx-menu-alt-right'></i>
-            </button>
-        </div>
-    </header>
-    <!-- Navigation end -->
-    <!-- Home Page -->
-    <section id="home">
-        <div class="profile">
-            <img src="img/profile.jpeg">
-        </div>
-        <div class="text">
-            <h2>Bashir</h2>
-            <p>Web devolmper & design</p>
-        </div>
-    </section>
-    <!-- Home Page End -->
-    <!-- Skills Page -->
-    <section id="skills">
-        <div class="title">
-            <h2>Skills</h2>
-        </div>
+    <ul class="menu">
+      <li class="lia"><a href="#home">Home</a></li>
+      <li class="lia"><a href="#skills">Skills</a></li>
+      <li class="lia"><a href="#services">Services</a></li>
+      <li class="lia"><a href="#contact">Contact</a></li>
+      <li class="libtn">
+        <button><i class="bx bxs-moon"></i></button>
+      </li>
+    </ul>
 
-        <div class="card-con">
-            <div class="card html">
-                <i class='bx bxl-html5'></i>
-                <h2>HTML</h2>
-                <p>
-                    I have a strong understanding of semantic HTML, forms, tables, and responsive layouts.
-                </p>
-            </div>
+    <div class="hum">
+      <button class="humBtn" id="menuBtn">
+        <i class="bx bx-menu-alt-right"></i>
+      </button>
+    </div>
+  </header>
 
-            <div class="card css">
-                <i class='bx bxl-css3'></i>
-                <h2>CSS</h2>
-                <p>
-                    Skilled in Flexbox, Grid, animations, and building responsive designs.
-                </p>
-            </div>
+  <!-- === Home Section === -->
+  <section id="home">
+    <div class="profile">
+      <img src="img/profile.jpeg" alt="Profile Image">
+    </div>
+    <div class="text">
+      <h2>Bashir</h2>
+      <p>Web Developer & Designer</p>
+      <a href="#services" class="learn-m">Learn more</a>
+    </div>
+  </section>
 
-            <div class="card js">
-                <i class='bx bxl-javascript'></i>
-                <h2>JavaScript</h2>
-                <p>
-                    Experience with DOM manipulation, ES6+, events, and creating interactive web elements.
-                </p>
-            </div>
+  <!-- === Skills Section === -->
+  <section id="skills">
+    <div class="title">
+      <h2>Skills</h2>
+    </div>
 
-            <div class="card git">
-                <i class='bx bxl-git'></i>
-                <h2>Git</h2>
-                <p>
-                    Proficient in version control with Git, branching, merging, and collaborating on projects.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- Home Page End -->
-    <script src="js/main.js"></script>
+    <div class="card-con">
+      <div class="card html">
+        <i class="bx bxl-html5"></i>
+        <h2>HTML</h2>
+        <p>I have a strong understanding of semantic HTML, forms, tables, and responsive layouts.</p>
+      </div>
+
+      <div class="card css">
+        <i class="bx bxl-css3"></i>
+        <h2>CSS</h2>
+        <p>Skilled in Flexbox, Grid, animations, and building responsive designs.</p>
+      </div>
+
+      <div class="card js">
+        <i class="bx bxl-javascript"></i>
+        <h2>JavaScript</h2>
+        <p>Experience with DOM manipulation, ES6+, events, and creating interactive web elements.</p>
+      </div>
+
+      <div class="card git">
+        <i class="bx bxl-git"></i>
+        <h2>Git</h2>
+        <p>Proficient in version control with Git, branching, merging, and collaborating on projects.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === Services Section === -->
+  <section id="services">
+    <h2 class="section-title">My Services</h2>
+
+    <div class="services-container">
+      <div class="service-card">
+        <i class="fas fa-laptop-code service-icon"></i>
+        <h3>Web Development</h3>
+        <p>I build responsive websites using HTML, CSS, and JavaScript.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-paint-brush service-icon"></i>
+        <h3>Landing Page Design</h3>
+        <p>Elegant, conversion-focused landing pages for businesses and startups.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fas fa-cogs service-icon"></i>
+        <h3>Optimization & Maintenance</h3>
+        <p>Speed optimization, mobile-friendliness, and regular updates for your site.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === Contact Section === -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-container">
+      <a href="https://github.com/bkha0" target="_blank" class="contact-card">
+        <i class="fab fa-github contact-icon"></i>
+      </a>
+      <a href="https://www.instagram.com/bkha0?igsh=MWFqdnN6eDEwdWpyMw==" target="_blank" class="contact-card">
+        <i class="fab fa-instagram contact-icon"></i>
+      </a>
+      <a href="https://t.me/Bkha2" target="_blank" class="contact-card">
+        <i class="fab fa-telegram contact-icon"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- === JavaScript File === -->
+  <script src="js/main.js"></script>
+
 </body>
-
 </html>

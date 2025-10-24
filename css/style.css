@@ -1,275 +1,394 @@
+/* === Start of Global Styles === */
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Cairo", sans-serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh;
-    width: 100%;
+  min-height: 100vh;
+  width: 100%;
 }
 
-/* Navigation Start */
+/* === Navigation Section === */
 header {
-    background: #f0f0f0;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2em;
-    position: fixed;
-    z-index: 999;
+  background: #f0f0f0;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+  position: fixed;
+  z-index: 999;
 }
 
 header .logo a {
-    text-decoration: none;
-    font-size: 1.5em;
-    font-weight: 800;
-    color: #333;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: #333;
 }
 
 header ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 ul li {
-    list-style: none;
-    margin: 0 14px;
+  list-style: none;
+  margin: 0 14px;
 }
 
 li a {
-    text-decoration: none;
-    color: #333;
-    transition: 0.4s;
+  text-decoration: none;
+  color: #333;
+  transition: 0.4s;
 }
 
 li a:hover {
-    letter-spacing: 1px;
-    color: #444;
+  letter-spacing: 1px;
+  color: #444;
 }
 
 li button {
-    width: 40px;
-    height: 40px;
-    border: none;
-    background: #333;
-    color: #fff;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
 }
 
 li button:hover {
-    background: #222;
+  background: #222;
 }
 
 header .hum {
-    display: none;
+  display: none;
 }
 
 header .hum button {
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    border: none;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hum button i {
-    font-size: 2em;
+  font-size: 2em;
 }
 
-/* Navigation End */
-
+/* === General Section Styles === */
 section {
-    width: 100%;
-    min-height: 100vh;
-    padding: 80px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px;
 }
 
+/* === Home Section === */
 #home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #home .profile {
-    width: 120px;
-    height: 120px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 4px solid #eee;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid #eee;
 }
 
 .profile img {
-    width: 120px;
-    height: 120px;
+  width: 120px;
+  height: 120px;
 }
 
 #home .text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .text h2 {
-    font-size: 2em;
-    font-weight: 900;
+  font-size: 2em;
+  font-weight: 900;
 }
 
 .text p {
-    font-size: 1em;
-    font-weight: 300;
-    letter-spacing: 1px;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
-/* skills */
+.text .learn-m {
+  text-decoration: none;
+  background: #333;
+  color: #fff;
+  padding: 6px 12px;
+  margin: 8px;
+  border-radius: 8px;
+  transition: 0.5s ease;
+}
+
+.text .learn-m:hover {
+  letter-spacing: 2px;
+  background: #222;
+}
+
+/* === Skills Section === */
 #skills {
-    padding: 80px 20px;
-    background: #f5f7fa;
-    text-align: center;
+  padding: 80px 20px;
+  background: #f5f7fa;
+  text-align: center;
 }
 
 #skills .title h2 {
-    font-size: 2em;
-    margin-bottom: 40px;
+  font-size: 2em;
+  margin-bottom: 40px;
 }
 
 .card-con {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
 
 .card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 600px;
-    max-height: 300px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 600px;
+  max-height: 300px;
 }
 
 .card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card i {
-    font-size: 3em;
-    color: #ff5722;
-    margin-bottom: 15px;
+  font-size: 5em;
+  margin-bottom: 15px;
 }
 
 .card h2 {
-    margin-bottom: 10px;
-    color: #333;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .card p {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.6;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
 }
 
-.card i {
-    font-size: 5em;
-    margin-bottom: 15px;
-}
-
-/* Different colors for each skill */
+/* === Skill Icon Colors === */
 .card.html i {
-    color: #e34f26;
-    /* HTML orange */
+  color: #e34f26;
 }
 
 .card.css i {
-    color: #2965f1;
-    /* CSS blue */
+  color: #2965f1;
 }
 
 .card.js i {
-    color: #f0db4f;
-    /* JS yellow */
+  color: #f0db4f;
 }
 
 .card.git i {
-    color: #f1502f;
-    /* Git red/orange */
+  color: #f1502f;
 }
 
-/* ==================== Responsive ==================== */
+/* === Services Section === */
+#services {
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  padding: 80px 20px;
+  margin: 50px 0;
+  text-align: center;
+  background: #fff;
+  min-height: 140vh;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: #f5f7fa;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 50px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* === Contact Section === */
+#contact {
+  background: #f5f7fa;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#contact .section-title {
+  font-size: 2rem;
+  color: #222;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 80px;
+  max-width: 500px;
+  max-height: 500px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  font-size: 5em;
+  color: #2c3e50;
+}
+
+/* === Responsive Section === */
 @media (max-width: 870px) {
-    header {
-        justify-content: space-between;
-    }
+  header {
+    justify-content: space-between;
+  }
 
-    header ul {
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        background: #f0f0f0;
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.6s ease;
-    }
+  header ul {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #f0f0f0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.6s ease;
+  }
 
-    header ul.show {
-        max-height: 500px;
-    }
+  header ul.show {
+    max-height: 500px;
+  }
 
-    ul .lia {
-        width: 90%;
-        text-align: center;
-        padding: 18px 0;
-        border-radius: 8px;
-        font-size: 1.2em;
-        transition: 0.3s;
-    }
+  ul .lia {
+    width: 90%;
+    text-align: center;
+    padding: 18px 0;
+    border-radius: 8px;
+    font-size: 1.2em;
+    transition: 0.3s;
+  }
 
-    ul .lia:hover {
-        background: #fff;
-    }
+  ul .lia:hover {
+    background: #fff;
+  }
 
-    .libtn {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: 10px 0 20px;
-    }
+  .libtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px;
+  }
 
-    .libtn i {
-        font-size: 2em;
-    }
+  .libtn i {
+    font-size: 2em;
+  }
 
-    .libtn button {
-        width: 90%;
-        height: 60px;
-    }
+  .libtn button {
+    width: 90%;
+    height: 60px;
+  }
 
-    header .hum {
-        display: block;
-    }
+  header .hum {
+    display: block;
+  }
 
-    .card:hover {
-        transform: translateY(-5px);
-    }
+  .card:hover,
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .contact-card {
+    padding: 40px;
+  }
+
+  .contact-icon {
+    font-size: 3em;
+  }
 }
