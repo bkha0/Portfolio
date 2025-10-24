@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Navigation Start */
+header {
+    background: #f0f0f0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+    position: fixed;
+    z-index: 999;
+}
+
+header .logo a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #333;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 14px;
+}
+
+li a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.4s;
+}
+
+li a:hover {
+    letter-spacing: 1px;
+    color: #444;
+}
+
+li button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+li button:hover {
+    background: #222;
+}
+
+header .hum {
+    display: none;
+}
+
+header .hum button {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hum button i {
+    font-size: 2em;
+}
+
+/* Navigation End */
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home .profile {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid #eee;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+}
+
+#home .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text h2 {
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.text p {
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* skills */
+#skills {
+    padding: 80px 20px;
+    background: #f5f7fa;
+    text-align: center;
+}
+
+#skills .title h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.card-con {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 600px;
+    max-height: 300px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card i {
+    font-size: 3em;
+    color: #ff5722;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.card i {
+    font-size: 5em;
+    margin-bottom: 15px;
+}
+
+/* Different colors for each skill */
+.card.html i {
+    color: #e34f26;
+    /* HTML orange */
+}
+
+.card.css i {
+    color: #2965f1;
+    /* CSS blue */
+}
+
+.card.js i {
+    color: #f0db4f;
+    /* JS yellow */
+}
+
+.card.git i {
+    color: #f1502f;
+    /* Git red/orange */
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 870px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header ul {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: #f0f0f0;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.6s ease;
+    }
+
+    header ul.show {
+        max-height: 500px;
+    }
+
+    ul .lia {
+        width: 90%;
+        text-align: center;
+        padding: 18px 0;
+        border-radius: 8px;
+        font-size: 1.2em;
+        transition: 0.3s;
+    }
+
+    ul .lia:hover {
+        background: #fff;
+    }
+
+    .libtn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 20px;
+    }
+
+    .libtn i {
+        font-size: 2em;
+    }
+
+    .libtn button {
+        width: 90%;
+        height: 60px;
+    }
+
+    header .hum {
+        display: block;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+}
